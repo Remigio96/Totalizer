@@ -67,6 +67,10 @@ btnQuitar.onclick = () => modificarCantidad(-1);
 2. Abre el archivo `index.html` en tu navegador.
 3. Usa los botones de "Agregar" o "Quitar" para modificar la cantidad.
 4. Observa cómo el total se actualiza en tiempo real.
+   
+#
+![image 1](https://github.com/user-attachments/assets/3ed93d71-cc4f-4c03-b1a9-754a3cb98a29)
+#
 
 ### 🔁 Clonar el repositorio
 
