@@ -30,6 +30,36 @@ Totalizer/
 │       └── index.js          # Lógica de interacción y cálculos
 └── index.html                # Interfaz principal
 ```
+## 🧠 ¿Cómo funciona el JavaScript?
+
+El archivo `script.js` maneja toda la lógica del proyecto:
+
+1. Se define un **precio fijo** por unidad del producto:
+```js
+const precio = 400000;
+```
+
+2. Se capturan los elementos clave del DOM (precio, cantidad, total y botones).
+3. Se inicializan los valores visibles en pantalla.
+
+4. La función `modificarCantidad(cambioCantidad)` permite **sumar o restar** unidades:
+```js
+function modificarCantidad(cambioCantidad) {
+  let cantidadActual = Number(cantidadSpan.innerHTML);
+  let nuevaCantidad = cantidadActual + cambioCantidad;
+
+  if (nuevaCantidad < 0) return;
+
+  cantidadSpan.innerHTML = nuevaCantidad;
+  totalSpan.innerHTML = nuevaCantidad * precio;
+}
+```
+5. Finalmente, se asignan eventos a los botones para modificar la cantidad:
+```js
+btnAñadir.onclick = () => modificarCantidad(1);
+btnQuitar.onclick = () => modificarCantidad(-1);
+```
+
 
 ## 🔧 Cómo usar
 
@@ -44,7 +74,7 @@ Totalizer/
 git clone https://github.com/Remigio96/Totalizer.git
 cd Totalizer
 ```
-### 🚀 Visualización en línea (GitHub Pages)
+### 🚀 Visualización en GitHub Pages
 
 ➡️ [https://remigio96.github.io/Totalizer](https://remigio96.github.io/Totalizer)
 
