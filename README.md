@@ -77,9 +77,7 @@ btnQuitar.onclick = () => modificarCantidad(-1);
 ```bash
 git clone https://github.com/Remigio96/Totalizer.git
 ```
-```
-cd Totalizer
-```
+
 ### 🚀 Visualización en GitHub Pages
 
 ➡️ [https://remigio96.github.io/Totalizer](https://remigio96.github.io/Totalizer)
